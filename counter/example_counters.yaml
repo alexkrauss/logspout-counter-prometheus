@@ -1,0 +1,12 @@
+#
+# This file defines the set of counters. The counter will be incremented whenever the "match" string occurs in the line.
+# The additional "level" attribute is passed as an extra label to the metric. Note that this is independent from the log
+# level that may be used by the log source.
+#
+counters:
+  hello:
+    match: "Hello"
+    level: "INFO"
+  world:
+    match: "World"
+    level: "ERROR"
